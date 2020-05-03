@@ -19,8 +19,8 @@ class Array {
     }
 
     /** Disposes this array. */
-    method void dispose() {
-      do Memory.dealloc(this);
+    method void dispose(Array object) {
+      do Memory.deAlloc(object);
       return;
     }
 }

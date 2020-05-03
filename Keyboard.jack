@@ -7,7 +7,7 @@
  * A library for handling user input from the keyboard.
  */
 class Keyboard {
-
+    static Array keyboard;
     /** Initializes the keyboard. */
     function void init() {
       let keyboard = 24576;
@@ -45,7 +45,7 @@ class Keyboard {
      */
     function char readChar() {
       var char key;
-      while(Keyboard.KeyPressed()=0){}
+      while(Keyboard.keyPressed()=0){}
         let key = Keyboard.keyPressed();
         while(~(Keyboard.keyPressed() = 0)){}
           do Output.printChar(key);

@@ -28,7 +28,7 @@ class String {
 
     /** Disposes this string. */
     method void dispose() {
-      do Array.dispose(buffer);
+      do buffer.dispose(buffer);
       return;
     }
 
@@ -114,12 +114,12 @@ class String {
     method void setInt(int val) {
       let str_len = 0;    // Clear string
 
-      if( number < 0 ) {
-        let number = -number;
+      if( val < 0 ) {
+        let val = -val;
         do appendChar(45);      // leading '-'
       }
 
-      do do_set_int(number);
+      do do_set_int(val);
       return;
       }
 

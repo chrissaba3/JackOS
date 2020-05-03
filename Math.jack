@@ -27,13 +27,13 @@ class Math {
       let powers_of_two[12] = 4096;
       let powers_of_two[13] = 8192;
       let powers_of_two[14] = 16384;
-      let powers_of_two[15] = 32768;
+      let powers_of_two[15] = 16384 + 16384; // int too big, must use this
       return;
     }
     function boolean bit(int x, int n){
         return ~((x & powers_of_two[n]) = 0);
     }
-    function two_to_the(int power){
+    function int two_to_the(int power){
       return powers_of_two[power];
     }
 
